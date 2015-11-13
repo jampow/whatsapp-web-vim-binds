@@ -7,15 +7,15 @@
 
 	"page_action": {
 		"default_icon": {
-			"19": "vim19.png",
-			"38": "vim38.png"
+			"19": "images/vim19.png",
+			"38": "images/vim38.png"
 		},
 		"default_title": "Vim binds for whatsapp web"
 	},
 
 	"content_scripts": [{
 		"matches": ["https://web.whatsapp.com/*"],
-		"js": ["script.js"]
+		"js": ["lib/script.js"]
 	}],
 	"permissions": [
 		"tabs",
