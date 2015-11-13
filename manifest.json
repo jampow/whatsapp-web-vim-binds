@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+
+	"name": "Vim binds for whatsapp web",
+	"description": "Use whatsapp web like vim",
+	"version": "0.1",
+
+	"page_action": {
+		"default_icon": {
+			"19": "vim19.png",
+			"38": "vim38.png"
+		},
+		"default_title": "Vim binds for whatsapp web"
+	},
+
+	"content_scripts": [{
+		"matches": ["https://web.whatsapp.com/*"],
+		"js": ["script.js"]
+	}],
+	"permissions": [
+		"tabs",
+		"https://web.whatsapp.com/"
+	]
+}
